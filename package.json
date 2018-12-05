@@ -4,7 +4,7 @@
   "description": "This is the personal website for Omar Jandali",
   "main": ".env.example.js",
   "scripts": {
-    "start": "nodemon ./server/app.js",
+    "start": "nodemon ./server/index.js",
     "build": "webpack -w",
     "seedCredentials": "node ./seeding/seedingCredentials.js",
     "seedProfiles": "node ./seeding/seedingProfiles.js",
