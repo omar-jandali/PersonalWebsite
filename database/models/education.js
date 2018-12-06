@@ -8,7 +8,7 @@ const Education = db.define(
     school: { type: seq.STRING, allowNull: false},
     major: { type: seq.STRING, allowNull: false },
     grad: { type: seq.STRING, allowNull: false },
-    description: { type: seq.TEXT, allowNull: false }
+    image: { type: seq.STRING, allowNull: false }
   },
   {
     timestamps: true,
