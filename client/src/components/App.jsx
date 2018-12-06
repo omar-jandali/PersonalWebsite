@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import content from '../../../website';
+import Update from './update';
+import Home from './home';
 
 export default class App extends Component{
   constructor(props){
     super(props),
     this.state({
-      page:'',
+      page:'home',
       skillsLanguages: content.skillsLanguages,
       skillsFrameworks: content.skillsFrameWorks,
       skillsFrontEnd: content.skillsFrontEnd,
@@ -21,5 +23,22 @@ export default class App extends Component{
     },)
   };
 
-
+  render(){
+    if(this.state.page === 'home'){
+      return(
+        <div>
+          <div>
+            <a href="">Update</a>
+          </div>
+        </div>
+      )
+    }
+    if(this.state.page === 'update'){
+      return(
+        <div>
+          <Update />
+        </div>
+      )
+    }
+  }
 };

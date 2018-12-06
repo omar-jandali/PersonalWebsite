@@ -19,6 +19,7 @@ const Education = db.define(
     })
     .catch((err) => {
       console.log('Error setting the Education model');
+      console.log(err);
     }),
 );
 
