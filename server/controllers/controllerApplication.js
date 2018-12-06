@@ -1,4 +1,4 @@
-const experience = require('../../database/models/experience');
+const education = require('../../database/models/application');
 
 const controller = {
   get: (req, res) => {

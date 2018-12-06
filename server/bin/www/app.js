@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const routerEducation = require('../../routers/routerEducation');
 const routerExperience = require('../../routers/routerExperience');
+const routerApplication = require('../../routers/routerApplication');
 require('dotenv').config();
 require('../../../database/index');
 
@@ -18,5 +19,6 @@ app.use(express.static(path.join(__dirname, '../../../client/dist')));
 
 app.use('/education', routerEducation);
 app.use('/experience', routerExperience);
+app.use('/application', routerApplication);
 
 module.exports = app;
