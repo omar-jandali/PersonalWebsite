@@ -14,6 +14,15 @@ export default class App extends Component{
     super(props),
     this.state = {
       page: '',
+      skillsLanguages: content.skillsLanguages,
+      skillsFrameWorks: content.skillsFrameWorks,
+      skillsFrontEnd: content.skillsFrontEnd,
+      skillsBackend: content.skillsBackend,
+      skillsDeloyment: content.skillsDeloyment,
+      skillsTesting: content.skillsTesting,
+      skillsOther: content.skillsOther,
+      contact: content.contact,
+      myabout: content.about,
     }
   };
 
