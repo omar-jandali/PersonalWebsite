@@ -94,7 +94,91 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _axios = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n\nvar _axios2 = _interopRequireDefault(_axios);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar App = function (_Component) {\n  _inherits(App, _Component);\n\n  function App(props) {\n    var _this;\n\n    _classCallCheck(this, App);\n\n    (_this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props)), _this), _this.state = {\n      page: 'home'\n    };\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        null,\n        _react2.default.createElement(\n          'h1',\n          null,\n          'hello'\n        )\n      );\n    }\n  }]);\n\n  return App;\n}(_react.Component);\n\nexports.default = App;\n;\n\n//# sourceURL=webpack:///./client/src/components/App.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _axios = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n\nvar _axios2 = _interopRequireDefault(_axios);\n\nvar _website = __webpack_require__(/*! ../../../website */ \"./website.js\");\n\nvar _website2 = _interopRequireDefault(_website);\n\nvar _about = __webpack_require__(/*! ./about/about */ \"./client/src/components/about/about.jsx\");\n\nvar _about2 = _interopRequireDefault(_about);\n\nvar _applications = __webpack_require__(/*! ./applications/applications */ \"./client/src/components/applications/applications.jsx\");\n\nvar _applications2 = _interopRequireDefault(_applications);\n\nvar _contact = __webpack_require__(/*! ./contact/contact */ \"./client/src/components/contact/contact.jsx\");\n\nvar _contact2 = _interopRequireDefault(_contact);\n\nvar _education = __webpack_require__(/*! ./education/education */ \"./client/src/components/education/education.jsx\");\n\nvar _education2 = _interopRequireDefault(_education);\n\nvar _experience = __webpack_require__(/*! ./experience/experience */ \"./client/src/components/experience/experience.jsx\");\n\nvar _experience2 = _interopRequireDefault(_experience);\n\nvar _features = __webpack_require__(/*! ./features/features */ \"./client/src/components/features/features.jsx\");\n\nvar _features2 = _interopRequireDefault(_features);\n\nvar _skills = __webpack_require__(/*! ./skills/skills */ \"./client/src/components/skills/skills.jsx\");\n\nvar _skills2 = _interopRequireDefault(_skills);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar App = function (_Component) {\n  _inherits(App, _Component);\n\n  function App(props) {\n    var _this;\n\n    _classCallCheck(this, App);\n\n    (_this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props)), _this), _this.state = {\n      page: ''\n    };\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        null,\n        'Omar Jandali'\n      );\n    }\n  }]);\n\n  return App;\n}(_react.Component);\n\nexports.default = App;\n;\n\n//# sourceURL=webpack:///./client/src/components/App.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/about/about.jsx":
+/*!***********************************************!*\
+  !*** ./client/src/components/about/about.jsx ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n//# sourceURL=webpack:///./client/src/components/about/about.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/applications/applications.jsx":
+/*!*************************************************************!*\
+  !*** ./client/src/components/applications/applications.jsx ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n//# sourceURL=webpack:///./client/src/components/applications/applications.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/contact/contact.jsx":
+/*!***************************************************!*\
+  !*** ./client/src/components/contact/contact.jsx ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n//# sourceURL=webpack:///./client/src/components/contact/contact.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/education/education.jsx":
+/*!*******************************************************!*\
+  !*** ./client/src/components/education/education.jsx ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n//# sourceURL=webpack:///./client/src/components/education/education.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/experience/experience.jsx":
+/*!*********************************************************!*\
+  !*** ./client/src/components/experience/experience.jsx ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n//# sourceURL=webpack:///./client/src/components/experience/experience.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/features/features.jsx":
+/*!*****************************************************!*\
+  !*** ./client/src/components/features/features.jsx ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n//# sourceURL=webpack:///./client/src/components/features/features.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/skills/skills.jsx":
+/*!*************************************************!*\
+  !*** ./client/src/components/skills/skills.jsx ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n//# sourceURL=webpack:///./client/src/components/skills/skills.jsx?");
 
 /***/ }),
 
@@ -560,6 +644,18 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 "use strict";
 eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/schedule-tracing.development.js */ \"./node_modules/schedule/cjs/schedule-tracing.development.js\");\n}\n\n\n//# sourceURL=webpack:///./node_modules/schedule/tracing.js?");
+
+/***/ }),
+
+/***/ "./website.js":
+/*!********************!*\
+  !*** ./website.js ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar skillsLanguages = ['Javascript', 'Python'];\nvar skillsFrameWorks = ['React', 'Angular', 'Django', 'Flask'];\nvar skillsFrontEnd = ['ES6 & ES5', 'HTML5', 'CSS3', 'Bootstrap', 'Google Materials'];\nvar skillsBackend = ['NodeJs native', 'Express', 'SQL', 'PostgreSQL', 'MySQL', 'NoSQL', 'MongoDB'];\nvar skillsDeloyment = ['Docker', 'AWS EC2', 'AWS S3', 'Digital Ocean'];\nvar skillsTesting = ['TDD', 'Jest', 'ESLint', 'Mocha'];\nvar skillsOther = ['RESTful', 'Agile', 'Scrum', 'communication', 'API integration', 'OOP'];\n\nvar contact = {\n  first_name: 'Omar',\n  last_name: 'Jandali',\n  full_name: 'Omar Jandali',\n  location: 'Mission Viejo, CA',\n  phone: '(951) 534-3666',\n  email: 'omarjandali@omnacore.com',\n  github: 'https://github.com/omar-jandali',\n  linkedin: 'https://www.linkedin.com/in/itsmeomarj/',\n  twitter: 'https://www.twitter.com/itsmeomarj',\n  instagram: 'http://www.instagram.com/itsmeomarj',\n  position: 'Software Engineer (Javascript)'\n};\n\nmodule.exports.skillsLanguages = skillsLanguages;\nmodule.exports.skillsFrameWorks = skillsFrameWorks;\nmodule.exports.skillsFrontEnd = skillsFrontEnd;\nmodule.exports.skillsBackend = skillsBackend;\nmodule.exports.skillsDeloyment = skillsDeloyment;\nmodule.exports.skillsTesting = skillsTesting;\nmodule.exports.skillsOther = skillsOther;\nmodule.exports.contact = contact;\n\n//# sourceURL=webpack:///./website.js?");
 
 /***/ })
 
