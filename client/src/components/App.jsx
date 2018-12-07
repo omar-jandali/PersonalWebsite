@@ -8,6 +8,7 @@ import Education from './education/education';
 import Experience from './experience/experience';
 import Features from './features/features';
 import Skills from './skills/skills';
+import Update from './update';
 
 export default class App extends Component{
   constructor(props){
@@ -22,14 +23,26 @@ export default class App extends Component{
       skillsTesting: content.skillsTesting,
       skillsOther: content.skillsOther,
       contact: content.contact,
-      myabout: content.about,
+      aboutMe: content.aboutMe,
     }
   };
+
+  addEducation(){
+
+  }
+
+  getEducation(){
+
+  }
+
+  deleteEducation(){
+
+  }
 
   render(){
     return(
       <div>
-        Omar Jandali
+        <Update />
       </div>
     )
   }
