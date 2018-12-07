@@ -9,12 +9,13 @@ import Experience from './experience/experience';
 import Features from './features/features';
 import Skills from './skills/skills';
 import Update from './update';
+import { timingSafeEqual } from 'crypto';
 
 export default class App extends Component{
   constructor(props){
     super(props),
     this.state = {
-      page: '',
+      page: 'public',
       skillsLanguages: content.skillsLanguages,
       skillsFrameWorks: content.skillsFrameWorks,
       skillsFrontEnd: content.skillsFrontEnd,
@@ -25,10 +26,29 @@ export default class App extends Component{
       contact: content.contact,
       aboutMe: content.aboutMe,
     }
+    this.watchSchool = this.watchSchool.bind(this)
+    this.watchMajor = this.watchMajor.bind(this)
+    this.watchGrad = this.watchGrad.bind(this)
+    this.watchImage = this.watchImage.bind(this)
   };
 
-  addEducation(){
-
+  watchSchool(e){
+    console.log(e.target.value)
+  }
+  
+  watchMajor(e){
+    console.log(e.target.value)
+    
+  }
+  
+  watchGrad(e){
+    
+    console.log(e.target.value)
+  }
+  
+  watchImage(e){
+    console.log(e.target.value)
+    
   }
 
   getEducation(){
@@ -40,10 +60,22 @@ export default class App extends Component{
   }
 
   render(){
-    return(
-      <div>
-        <Update />
-      </div>
-    )
+    if(this.state.page === 'public'){
+      return(
+        <div>
+          public
+        </div>
+      )
+    }
+    if(this.state.page === 'dev'){
+      return(
+        <div>
+          <Update watchSchool={this.watchSchool} 
+                  watchMajor={this.watchMajor}
+                  watchGrad={this.watchMajor}
+                  watchImage={this.watchImage}/>
+        </div>
+      )
+    }
   }
 };

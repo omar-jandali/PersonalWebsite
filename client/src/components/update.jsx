@@ -7,19 +7,19 @@ export default function Update(props){
         <h3>Education</h3>
         <label>
           School:
-          <input type="text" name="school"/>
+          <input onChange={(e) => {props.watchSchool(e)}} type="text" name="school"/>
         </label><br/>
         <label>
           Major:
-          <input type="text" name="major"/>
+          <input onChange={(e) => {props.watchMajor(e)}} type="text" name="major"/>
         </label><br/>
         <label>
           grad:
-          <input type="number" name="grad"/>
+          <input onChange={(e) => {props.watchGrad(e)}} type="number" name="grad"/>
         </label><br/>
         <label>
           image:
-          <input type="text" name="image"/>
+          <input onChange={(e) => {props.watchImage(e)}} type="text" name="image"/>
         </label><br/>
         <input type="submit" name="submit" value="Submit"/>
       </form>
