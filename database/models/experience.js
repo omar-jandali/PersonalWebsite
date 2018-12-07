@@ -5,9 +5,9 @@ const Experience = db.define(
   'experience',
   {
     _id: { type: seq.INTEGER, primaryKey: true, autoIncrement: true, allowNull: false },
-    name: { type: seq.STRING, allowNull: false },
+    position: { type: seq.STRING, allowNull: false },
+    company: { type: seq.STRING, allowNull: false },
     descriptions: { type: seq.ARRAY(seq.TEXT), allowNull: false },
-    link: { type: seq.STRING, allowNull: false },
     year_from: { type: seq.INTEGER, allowNull: true },
     year_to: { type: seq.INTEGER, allowNull: true }
   },
