@@ -20,10 +20,10 @@ const contact = {
   position: 'Software Engineer (Javascript)'
 }
 
-const about = 'I, Omar Jandali, am a software engieer focusing on Full Stack Web Development utilizing Javascript and Python. I have been '
-about += 'programming for 4 years now with 2.5 years as a Full Stack Web Developer. My passion for programmming came from the simple idea of '
-about += 'having a computer and being able to build a production level application from scratch. For a very long time, it was said that the '
-about += 'sky is the limit. With technology and programmers, that limit was eliminated. '
+let aboutMe = 'I, Omar Jandali, am a software engieer focusing on Full Stack Web Development utilizing Javascript and Python. I have been '
+aboutMe += 'programming for 4 years now with 2.5 years as a Full Stack Web Developer. My passion for programmming came from the simple idea of '
+aboutMe += 'having a computer and being able to build a production level application from scratch. For a very long time, it was said that the '
+aboutMe += 'sky is the limit. With technology and programmers, that limit was eliminated. '
 
 module.exports.skillsLanguages = skillsLanguages;
 module.exports.skillsFrameWorks = skillsFrameWorks;
@@ -33,4 +33,4 @@ module.exports.skillsDeloyment = skillsDeloyment;
 module.exports.skillsTesting = skillsTesting;
 module.exports.skillsOther = skillsOther;
 module.exports.contact = contact;
-module.exports.about = about;
+module.exports.aboutMe = aboutMe;
